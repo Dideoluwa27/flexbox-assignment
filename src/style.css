@@ -2,18 +2,14 @@
 
  section{
     display: flex;
-    justify-content: center;
-    
-
+    justify-content: center; 
 }
 .one{
   background-color:hsl(31, 77%, 52%);
   color: hsla(0, 0%, 100%, 0.75);
   height: 70vh;
   width: 15%;
-  font-size: larger;
-  
-  
+  font-size: larger; 
 }
 .two{
  background-color:hsl(184, 100%, 22%);
@@ -32,30 +28,74 @@
 .first{
   background-color: white;
   border-radius: 30px;
+  font-size: large;
   height: 10%;
   width:11vw ; 
   color:hsl(31, 77%, 52%) ;
   border: none;
   margin-top:40% ;
+  cursor: all-scroll; 
 }
 .second{
   background-color: white;
-  color:hsl(184, 100%, 22%); ;
+  color:hsl(184, 100%, 22%);
+  font-size: large;
   border-radius: 30px;
   height: 10%;
   width:11vw ; 
   border: none;
   margin-top: 30%;
+  cursor: all-scroll; 
 }
 .third{
   background-color: white;
   border-radius: 30px;
+  font-size: large;
   color:hsl(179, 100%, 13%) ;
   height: 10%;
   width:11vw ;
   border:none;
-  margin-top: 30%; 
+  margin-top: 30%;
+  cursor: all-scroll; 
 }
 div{
   padding: 5% 5% 5% 5%;
+}
+
+@media(max-width:768px){
+ section{
+ flex-direction: column; 
+  /* padding:0; */
+  
+ }
+ .first{
+  width: 40vw;
+  height: 10vh;
+  cursor: auto;
+ }
+ .second{
+  width: 40vw;
+  height: 10vh;
+  cursor: auto;
+ }
+ .third{
+  width: 40vw;
+  height: 10vh;
+  cursor: auto;
+ }
+ .one{
+  width:50vw;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+ }
+ .two{
+  width:50vw;
+  
+ }
+ .three{
+  width:50vw;
+  
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+ }
 }
